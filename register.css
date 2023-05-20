@@ -44,3 +44,10 @@ body {
     background-color: #212b38;
 }
 
+#pocetna {
+    position: fixed;
+    font-size: 34px;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+  }

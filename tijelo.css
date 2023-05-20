@@ -1,0 +1,209 @@
+html{
+    scroll-behavior: smooth;
+  }
+  body{
+    scroll-snap-type: y proximity;
+  }
+  
+  :root {
+      --color-primary: #0073ff;
+      --color-white: #e9e9e9;
+      --color-black: #141d28;
+      --color-black-1: #212b38;
+    }
+    
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: sans-serif;
+    
+  }
+  
+  .logo {
+    color: var(--color-white);
+    font-size: 30px;
+  }
+  
+  .logo span {
+    color: var(--color-primary);
+  }
+  
+  .menu-bar {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  
+    position: relative;
+  }
+  
+  .menu-bar ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  .menu-bar ul li {
+    padding: 10px 30px;
+    position: relative;
+  }
+  
+  .menu-bar ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+  }
+  
+  .menu-bar ul li a:hover {
+    color: var(--color-primary);
+  }
+  
+  .fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+  }
+
+  #tijelo {
+    position: relative;
+    width: 100%;
+    height: 400;
+    background-image: url('Slike/fitness1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#tijelo p1{
+    position: absolute;
+    width: 400px;
+    height:300px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    font-size: 2.5rem;
+    line-height: 1.0625em;
+    font-weight: 900;
+    margin-left: 45px; 
+    transform: translate(0%, 30%); 
+}
+#tijelo p2{
+    position: absolute;
+    width: 350px;
+    height:300px;
+    color: white;
+    font-family: 'Vollkorn', serif;
+    font-size: 2.5rem;
+    line-height: 1.0625em;
+    font-weight: 900;
+    margin-left: 45px; 
+    transform: translate(260%, 60%); 
+}
+
+#aktivnosti{
+    
+    margin-bottom: 40px;
+}
+
+#aktivnosti h2{
+    padding: 20px;
+    font-family: 'Vollkorn', serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10%;
+    margin-top: 10px;
+    
+}
+
+#aktivnosti img{
+    max-width: 70%;
+}
+
+.container p{
+    max-width: 280px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-family: 'Vollkorn', serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: grey;
+}
+
+#joga{
+    font-family: 'Vollkorn', serif;
+}
+
+#joga h1{
+    margin-left: 50px;
+}
+
+#joga p{
+    max-width: 1200px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 70px;
+    line-height: 2em;
+}
+
+.container1{
+    display: flex;
+    flex-direction: column;
+}
+
+.container2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container3{
+    display: flex;
+    flex-direction: row;
+}
+
+.container4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 70px;
+}
+
+.container4 img{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+#quote{
+    margin: 60px;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 150%;
+    text-align: center;
+    background-color: #DBDFEA;
+    font-family: 'Cinzel', serif;
+    font-weight: 650;
+
+}
+    
+  
+  
