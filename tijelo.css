@@ -1,85 +1,86 @@
 html{
     scroll-behavior: smooth;
   }
-  body{
-    scroll-snap-type: y proximity;
-  }
-  
-  :root {
-      --color-primary: #0073ff;
-      --color-white: #e9e9e9;
-      --color-black: #141d28;
-      --color-black-1: #212b38;
-    }
-    
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-    
-  }
-  
-  .logo {
-    color: var(--color-white);
-    font-size: 30px;
-  }
-  
-  .logo span {
-    color: var(--color-primary);
-  }
-  
-  .menu-bar {
-    background-color: var(--color-black);
-    height: 80px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-  
-    position: relative;
-  }
-  
-  .menu-bar ul {
-    list-style: none;
-    display: flex;
-  }
-  
-  .menu-bar ul li {
-    padding: 10px 30px;
-    position: relative;
-  }
-  
-  .menu-bar ul li a {
-    font-size: 20px;
-    color: var(--color-white);
-    text-decoration: none;
-  
-    transition: all 0.3s;
-  }
-  
-  .menu-bar ul li a:hover {
-    color: var(--color-primary);
-  }
-  
-  .fas {
-    float: right;
-    margin-left: 10px;
-    padding-top: 3px;
-  }
+body{
+  scroll-snap-type: y proximity;
+}
 
-  #tijelo {
-    position: relative;
-    width: 100%;
-    height: 400;
-    background-image: url('Slike/fitness1.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background: rgb(187,187,187);
+background: linear-gradient(25deg, rgba(187,187,187,1) 0%, rgba(242,224,224,1) 32%, rgba(205,212,255,1) 64%, rgba(255,255,255,1) 100%);
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  padding: 10px 30px;
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+#tijelo {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url('Slike/fitness1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 #tijelo p1{
@@ -131,6 +132,10 @@ html{
     max-width: 70%;
 }
 
+.container{
+  margin-top: 40px;
+}
+
 .container p{
     max-width: 280px;
     display: -webkit-box;
@@ -155,7 +160,7 @@ html{
     max-width: 1200px;
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 70px;
+    margin-left: 50px;
     line-height: 2em;
 }
 
@@ -174,9 +179,24 @@ html{
     padding-right: 20px;
 }
 
+.container2 img{
+  transition: transform 550ms;
+  box-shadow:  6px 6px 12px #a8a8a8,
+             -6px -6px 12px #cdd4ff;
+}
+
+.container2 img:hover{
+  transform: scale(1.1);
+  transition:transform 550ms;
+}
+
 .container3{
     display: flex;
     flex-direction: row;
+}
+
+.container3 a{
+  margin-left: 340px;
 }
 
 .container4{
@@ -186,24 +206,225 @@ html{
     align-items: center;
     margin-top: 10px;
     margin-left: 70px;
+    margin-right: 20px;
 }
 
 .container4 img{
     margin-top: 40px;
     margin-bottom: 20px;
+    transition: transform 550ms;
+    box-shadow:  6px 6px 12px #a8a8a8,
+             -6px -6px 12px #cdd4ff;
 }
 
-#quote{
+.container4 img:hover{
+  transform: scale(1.1);
+  transition:transform 550ms;
+}
+
+#quote1{
     margin: 60px;
     padding: 20px;
     border-radius: 10px;
     font-size: 150%;
     text-align: center;
-    background-color: #DBDFEA;
+    opacity: 0.7;
+    background-color: rgba(255, 255, 255, 0);
     font-family: 'Cinzel', serif;
     font-weight: 650;
+    transition: transform 550ms, opacity 550ms;
+    
+}
+
+#quote1:hover{
+  opacity: 1;
+  transform: scale(1.05) translateY(-5%);
+  transition: transform 550ms, opacity 550ms;
+}
+
+#treniranje{
+  font-family: 'Vollkorn', serif;
 
 }
+
+#treniranje h1{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+}
     
+.container5{
+  display: flex;
+  flex-direction: row;
   
+}
+
+.container5 p{
+  line-height: 2em;
+  margin-left: 30px;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.container5 img{
+  width: 300px;
+  height: 500px;
+  top: 50%;
+  left: 50%;
+}
+
+#treniranje1 p{
+  margin-top: 20px;
+  margin-right: 60px;
+  margin-left: 40px;
+  line-height: 2em;
+}
+
+.container6{
+  display: flex;
+  flex-direction: row;
+}
+
+.container6 img{
+  width: 200px;
+  height: auto;
+  justify-content: center;
+  align-content: center;
+}
+
+#treniranje2{
+  margin-bottom: 50px;
+  margin-left: 40px;
+  line-height: 2em;
+}
+
+#treniranje2 a{
+  margin-left: 500px;
+  line-height: 2em;
+
+}
+
+#quote2{
+  margin: 60px;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 150%;
+  text-align: center;
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Cinzel', serif;
+  font-weight: 650;
+  transition: transform 550ms, opacity 550ms;
   
+}
+
+#quote2:hover{
+opacity: 1;
+transform: scale(1.05) translateY(-5%);
+transition: transform 550ms, opacity 550ms;
+}
+
+#rekreacija{
+  font-family: 'Vollkorn', serif;
+
+}
+
+#rekreacija h1{
+  margin-top: 30px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: rgb(0, 0, 0);
+}
+
+#rekreacija p{
+  margin-left: 40px;
+  margin-right: 30px;
+  line-height: 2rem;
+}
+
+.container6{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;;
+}
+
+.container6 img{
+  width: 500px;
+  height: auto;
+  margin-left: 40px;
+}
+
+.container6 p{
+  margin-right: 20px;
+}
+
+.container7{
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  margin-bottom: 40px;;
+}
+
+.container7 img{
+  width: 500px;
+  height: auto;
+  margin-right: 40px;
+}
+
+.container7 p{
+  margin-right: 20px;
+}
+
+#quote3{
+  margin: 50px;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 150%;
+  text-align: center;
+  opacity: 0.7;
+  background-color: rgba(255, 255, 255, 0);
+  font-family: 'Cinzel', serif;
+  font-weight: 650;
+  transition: transform 550ms, opacity 550ms;
+  
+}
+
+#quote3:hover{
+opacity: 1;
+transform: scale(1.05) translateY(-5%);
+transition: transform 550ms, opacity 550ms;
+}
+
+.container8{
+  display: flex;
+  flex-direction: row;
+  height: 300px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.904);
+  justify-content: space-between;
+}
+
+.container8 p{
+  color: white;
+  font-size: 110%;
+  text-align: center;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-top: 60px;
+}
+
+.container9{
+  display: flex;
+  flex-direction: column;
+}
+.logoF {
+  color: var(--color-white);
+  margin-left: 60px;
+  margin-top: 50px;
+}
+
+.logoF span {
+  color: var(--color-primary);
+}

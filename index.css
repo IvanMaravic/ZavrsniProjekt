@@ -109,7 +109,7 @@ body {
 #tijelo{
 position: relative;
 width: 100%;
-height: 640;
+height: 660;
 background-image: url('Slike/fitness2.jpg');
 background-size: cover;
 background-repeat: no-repeat;
@@ -130,6 +130,31 @@ scroll-snap-align: center;
   margin-left: 45px; 
   transform: translate(10%, 30%);
 }
+
+#zdravlje{
+  position: relative;
+  width: 100%;
+  height: 660px;
+  background-image: url('Slike/zdravlje.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  scroll-snap-align: center;
+  
+  } 
+  
+  
+  #zdravlje p{
+    position: absolute;
+    width: 580px;
+    height:300px;
+    color: #ffffff;
+    font-family: 'Vollkorn', serif;
+    font-size: 2.4rem;
+    line-height: 1.0625em;
+    font-weight: 950;
+    margin-left: 45px; 
+    transform: translate(120%, 110%);
+  }
   
 
  

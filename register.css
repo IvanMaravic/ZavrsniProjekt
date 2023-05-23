@@ -29,6 +29,8 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    box-shadow:  -5px -5px 10px #681561,
+             5px 5px 10px #ff3bff;
 }
 .container button {
     background-color: #474747;
@@ -39,6 +41,8 @@ body {
     border-radius: 4px;
     cursor: pointer;
     width: 100%;
+    box-shadow:  -5px -5px 10px #681561,
+             5px 5px 10px #ff3bff;
 }
 .container button:hover {
     background-color: #212b38;
