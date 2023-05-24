@@ -66,9 +66,10 @@ body {
     padding-top: 3px;
 }
 
+#sve{
+    font-family: 'Volcorn', serif;
+}
 
-
-/*Prehrana prvi odjeljak*/
 #prehrana {
     position: relative;
     width: 100%;
@@ -91,53 +92,72 @@ body {
     transform: translate(0%, 20%); 
 }
 
-#item-1{
-    display: flex;
-    flex-direction: row;
-}
-
-#petSavjeta{
+#savjeti h2{
     font-size: 200%;
     margin-top:20px;
     margin-left: 20;
+    margin-bottom: 20px;
 }
 
-#section1 {
-    position: relative;
+#savjeti {
     margin-left: 20px;
-    max-width: 700px;
-    border-radius: 15px;
+    border-radius: 44px;
     margin-top: 20px;
-    padding: 20px;
-    background-color: var(--color-white);
-    color: var(--color-black);
-    font-family: 'Vollkorn', serif;
 }
 
-#section1 p{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    margin-right: 10px
-  }
 
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container span{
+    font-size: 30px;
+    font-weight: 600;
+}
 
-#tablica{
-    position: relative;
-    margin-top: 20px;
-    margin-left:20px;
+.container img{
+    width: auto;
+    height: 300px;
+    border-radius: 44px;;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.container p{
+    margin-left: 30px;
+    margin-right: 30px;
+    line-height: 2rem;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+    align-items: center;
     
+}
+
+.container2{
+    display: flex;
+    flex-direction: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.container2 p{
+    font-family: 'Volcorn', serif;
+    line-height: 2rem;
+    width: 700px;
+    margin-top: 40px;
+    margin-right: 40px;
 }
 
 #tablica table{
     margin-top: 10px;
     margin-bottom: 10px;
 }
-#tablica p{
-    font-family: 'Vollkorn', serif;
-    font-size: 130%;
-}
-
 
 table {
     border-collapse: separate ;
@@ -156,9 +176,4 @@ th {
 
 tr {
     width:120%;
-}
-
-#tablica a{
-    text-decoration: none;
-    color:#0073ff;
 }
